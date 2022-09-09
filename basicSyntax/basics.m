@@ -40,4 +40,32 @@ randn(3, 2)
 B = [0,  1,  2,  3;
      5,  6,  7,  8;
      10, 11, 12, 13];
-C = B' % syntax untuk transpose matriks
+C = B'; % syntax untuk transpose matriks
+% hasilnya C =
+%     0     5    10
+%     1     6    11
+%     2     7    12
+%     3     8    13
+
+% perkalian matriks
+D = B * C;
+E = B ^ 3
+
+% penjumlahan dan pengurangan
+M1 = [0, 1;
+      2, 3];
+  
+M2 = [4, 5;
+      6, 7];
+  
+Jumlah = M1 + M2;
+Selisih = M1 - M2;
+Tambah50 = M1 + 50;
+
+% --- plotting 2 dimensi --- %
+x = 1:8; % membuat array matriks 1 - 8
+y = [20, 22, 25, 30, 28, 25, 24, 22];
+plot(x, y)
+xlabel('Sumbu X'), ylabel('Sumbu Y')
+title('Plotting 1')
+grid on
